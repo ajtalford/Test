@@ -1,0 +1,61 @@
+mkdir <dName> ,#Make directory (create a new directory)
+
+rmdir ,#Remove directory (-r if not empty)
+
+touch <fName> ,#Make a new file
+
+rm <fName>  ,#Remove file from directory (-r for recursive)
+ 
+rmdir -r <dName>,#Remove recursively (removes dir and content -f to force)
+
+cp -r <source> <destination> ,#Copy recursively (copies directory and everything in it) 
+
+pwd ,#Print working directory (displays the current working directory)
+
+ls ,#List (displays files and directories in current directory)
+
+ls -al [-d */ = sub-folders, -lh = Human readable ],# List all files (detailed) format
+
+cd <dName> ,#Change directory
+
+cd ~ ,#Goto home directory
+
+cd ..  ,#Down one directories
+
+cd ../.. ,#Down two directories
+
+cd -  ,#Goto last location
+
+cp <source> <destination> ,#Copy (copy file) 
+
+mv <source> <destination>  mv <old name> <new name> ,#Move (move/rename file/dir)  
+
+cat <fName> ,#Concatenate (print contents to stdout)
+
+echo "text or argument to print" ,#Print a string or arguments
+
+less <fName> ,# Browse through a text file
+
+head <fName> ,# Display the first 10 lines of file
+
+tail -<n_lines> <file_name> ,# Display last 10 lines of file default of Xnum lines
+
+tail -f <fName> ,# Display the last 10 lines of file and "follow" the file as it grows.
+
+cat file1 file2 file3 > newfile ,#Combine several text files into a single file
+
+cat file1 file2 file3 >> destfile ,#Add or more files to existing document (using > instead of >>, will overwrite not add.
+
+cp file_name new_file_name ,#Copy one file contents to another (name must be different if same directory)
+
+cp -v nixcraft.txt /tmp/ ,#Copy nixcraft.txt w/same name into another directory:
+
+cp nixcraft.txt NIXCRAFT.txt ,#File names are case sensitive so copy file nixcaft.txt rename it using uppercase
+
+echo "This is a test" > foo.txt ,#Create a new file in Linux named foo.txt:
+
+cp foo.txt bar.txt ,#Copy foo.txt as bar.text
+
+cat bar.txt ,#Print 'This is a test' which is the content of bar.txt
+
+echo "Another line" >> foo.txt ,#Update foo.txt with text 'Another line'
